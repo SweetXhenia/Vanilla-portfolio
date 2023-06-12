@@ -1,0 +1,124 @@
+@charset "UTF-8";
+:root {
+  --color-primary-light: #f6eadf;
+  --color-primary-dark: #e6cbb0;
+  --color-secondary: #c1a283;
+  --color-secondary-dark: #84593e;
+  --color-font-dark: #52392a;
+  --color-font-light: #84593e;
+  --color-font-shadow:#EEDAC7;
+  --color-white: #fff; }
+
+* {
+  margin: 0;
+  /* globální reset aby se začalo od nuly */
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  backface-visibility: hidden;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-primary-light);
+  position: relative; }
+
+.sidebar {
+  width: 13%;
+  height: 99.5%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-dark);
+  border-radius: 7px;
+  box-shadow: 5px 5px 3px var(--color-secondary);
+  font-family: 'Cardo', serif; }
+  .sidebar__heading {
+    font-size: 6rem;
+    text-align: center;
+    margin: 5rem 2rem;
+    color: var(--color-font-dark); }
+  .sidebar__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    font-size: 2.5rem;
+    list-style: none; }
+  .sidebar__item {
+    margin-bottom: 9rem;
+    text-align: center;
+    padding: .6rem; }
+    .sidebar__item a {
+      text-decoration: none;
+      color: var(--color-font-dark); }
+    .sidebar__item--active {
+      background-color: var(--color-secondary);
+      width: 75%;
+      border-radius: 5px; }
+
+.triangle {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  background-color: #52392a;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  .triangle-1 {
+    top: 17rem;
+    left: -0.7rem;
+    rotate: -15deg; }
+  .triangle-2 {
+    bottom: 1rem;
+    left: 80%;
+    rotate: 30deg; }
+
+.hexagon {
+  height: 3.3rem;
+  width: 3rem;
+  position: absolute;
+  background-color: var(--color-secondary);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .hexagon-1 {
+    top: 1rem;
+    right: 10%; }
+  .hexagon-2 {
+    bottom: 35%;
+    left: -1rem; }
+
+.about {
+  display: flex;
+  flex-direction: column; }
+  .about__heading {
+    font-size: 10rem;
+    color: var(--color-font-dark);
+    font-weight: 100;
+    letter-spacing: 20px;
+    text-align: center;
+    text-shadow: 5px 5px 1px var(--color-font-shadow); }
+  .about__box {
+    display: grid;
+    gap: 5rem;
+    margin: 3rem; }
+    .about__box--1 {
+      grid-column: 1/3;
+      background-color: burlywood; }
+    .about__box--2 {
+      grid-column: 1/3;
+      background-color: slategray; }
+    .about__box--3 {
+      grid-area: 1/3/3/3;
+      background-color: aqua; }
+
+.content {
+  width: 86%;
+  margin-left: auto; }

@@ -1,0 +1,41 @@
+.triangle {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  background-color: #52392a;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  &-1 {
+    top: 17rem;
+    left: -0.7rem;
+    rotate: -15deg;
+  }
+  &-2 {
+    bottom: 1rem;
+    left: 80%;
+    rotate: 30deg;
+  }
+}
+.hexagon {
+  height: 3.3rem;
+  width: 3rem;
+  position: absolute;
+  background-color: var(--color-secondary);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  &-1 {
+    top: 1rem;
+    right: 10%;
+  }
+  &-2 {
+    bottom: 35%;
+    left: -1rem;
+  } 
+}
