@@ -15,6 +15,18 @@
     left: 80%;
     rotate: 30deg;
   }
+  &-3 {
+    top: -1rem;
+    left: 45%;
+    rotate: 12deg;
+    position: fixed;
+  }
+  &-4 {
+    bottom: 1rem;
+    right: 10rem;
+    rotate: 15deg;
+    position: fixed;
+  }
 }
 .hexagon {
   height: 3.3rem;
@@ -37,5 +49,17 @@
   &-2 {
     bottom: 35%;
     left: -1rem;
-  } 
+  }
+  &-3 {
+    top: 0;
+    right: 1rem;
+    rotate: 10deg;
+    position: fixed;
+  }
+  &-4 {
+    bottom: 1rem;
+    left: 30%;
+    rotate: -42deg;
+    position: fixed;
+  }
 }
