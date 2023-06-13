@@ -4,16 +4,6 @@
   font-family: "Open sans", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  &__heading {
-    font-size: 10rem;
-    color: var(--color-font-dark);
-    font-weight: 100;
-    letter-spacing: 30px;
-    text-align: center;
-    text-shadow: 5px 5px 1px var(--color-font-shadow);
-    font-family: "Cardo", serif;
-    margin: 2rem;
-  }
   &__box {
     display: grid;
 
@@ -79,4 +69,14 @@
   height: 25vh;
   margin: 2rem auto 1rem;
   border-radius: 10px;
+}
+.heading {
+  font-size: 10rem;
+  color: var(--color-font-dark);
+  font-weight: 100;
+  letter-spacing: 30px;
+  text-align: center;
+  text-shadow: 5px 5px 1px var(--color-font-shadow);
+  font-family: "Cardo", serif;
+  margin: 2rem;
 }
